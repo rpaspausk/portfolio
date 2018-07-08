@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta 
+charset="utf-8">
+<style type="text/css">
+  form{
+    background-color: gold;
+    font: 20px tahoma;
+    border: 2px solid grey;
+    padding-top: 1em;
+  }
+  input, textarea{
+    font: 30px fantasy;
+    color:Pink;
+    background-color:grey;
+  }
+  .mano{
+    
+  }
+</style>
+<title>Skelbimų lenta</title>
+</head>
+
+<body>
+
+<p><span class="pav">Naujas</span><span id="pav1">skelbimas</span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr>
+<form>
+   <div align="center">
+    <table>
+      <tr>
+        <td>Skelbimo tipas:</td>
+        <td><input type="radio" value="V" name="R1" >IEŠKO
+          <input type="radio" value="V" checked name="R1">SIŪLO</td>
+      </tr>
+      <tr>
+        <td>Skyrius:</td>
+        <td><select size="1" name="skyrius" class="mano">
+            <option>Nekilnojamas turtas</option>
+            <option>Buitis</option>
+            <option>Automobiliai</option>
+            <option>Darbas</option>
+            <option>Kompiuteriai</option>
+          </select></td>
+      </tr>
+      <tr>
+        <td>Pavadinimas:</td>
+        <td><input type="text" name="pavadinimas" size="40" class="mano"></td>
+      </tr>
+      <tr>
+        <td>Skelbimo tekstas:</td>
+        <td><textarea rows="4" name="tekstas" cols="40" class="mano"></textarea></td>
+      </tr>
+      <tr>
+        <td>Vardas:</td>
+        <td><input type="text" name="vardas" size="40" class="mano"></td>
+      </tr>
+      <tr>
+        <td>Telefonas:</td>
+        <td><input type="text" name="telefonas" size="40" class="mano"></td>
+      </tr>
+      <tr>
+        <td>E-Mail:</td>
+        <td><input type="text" name="mail" size="40" class="mano"></td>
+      </tr>
+      <tr>
+        <td>Miestas:</td>
+        <td><input type="text" name="miestas" size="40" class="mano"></td>
+      </tr>
+    </table>
+  </div>
+  <p align="center"><input type="submit" value="Skelbti" class="mano"><input type="reset" value="Reset" class="mano"></p>
+</form>
+<hr>
+
+</body>
+
+</html>

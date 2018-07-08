@@ -1,0 +1,19 @@
+body{
+	background-image: url(tekstura.jpg);
+}
+
+p{
+	font-size: 14pt;
+	font-family: Monospace;
+	color: blue;
+}
+h1{
+	font-size: 25pt;
+	font-family: fantasy;
+	color:#254117;
+}
+h2{
+	font-size: 20pt;
+	font-family: sans-serif;
+	color: brown;
+}

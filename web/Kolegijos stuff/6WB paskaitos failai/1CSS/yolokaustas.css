@@ -1,0 +1,19 @@
+body{
+	background-color: rgb(150,20,100);
+	background-image: url(fonas2.jpg);
+	background-repeat: repeat-x;
+	/* no-repeat , repeat-x repeat-y*/
+}
+h1{
+	color: green;
+	font-family: Garamond;
+	font-size: 40px;
+	/*text-decoration: overline;
+	text-decoration: underline;*/
+	text-decoration: overline underline;
+}
+p{ 
+	color:#0000FF;
+	font-family: fantasy;/*Cs kom: fantasy - sriftu seima*/
+	font-size: 40px;
+}

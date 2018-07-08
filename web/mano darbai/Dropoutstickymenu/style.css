@@ -1,0 +1,84 @@
+body{                       /* top*/
+    margin: 0px;
+}
+#bnav{
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    padding: 0px;
+}
+#bleft{
+    display: inline-block;
+    height: 90px;
+    margin-left: 10px;
+}
+#bleft a{
+    font-size: 50px;
+    color:black;
+    text-decoration: none;
+}
+#bright{
+    float: right;
+    height: 90px;   
+    line-height: 100px;
+    margin-right: 20px;
+}
+#bcom{
+    color: greenyellow;
+}
+#bleft a:hover{
+    color: greenyellow;
+}
+#nav{                       /* sticky Navigation*/
+    width: 100%;
+    background-color:rgb(71, 71, 71);
+    position: sticky;
+    top: 0px;
+    padding:0;/*del overflow neveike*/
+    margin:0;
+}
+#navl{
+    width: 60%;
+    background-color:rgb(71, 71, 71);
+    float:left; /*zyme*/
+}
+#navr{
+    width: 40%;
+    background-color:rgb(71, 71, 71);
+    float:right;
+}
+#navl ul, #navr ul{
+    list-style-type: none;
+    margin: 0px;
+    /*galima cia padding:0 istatyt*/
+}
+#navl ul li {float:left;/*1-ma beda*/}
+#navr ul li {float:right;/*1-ma beda*/}
+#navl ul li a, #navr ul li a{
+    display: block;/*1-ma beda*/
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+#navl ul li a:hover:not(.activated), #navr ul li a:hover{
+    background-color: rgb(143, 196, 52);
+}
+.activated{background-color: orangered}
+                             
+.dropdown-content{             /*DROPDOWN*/
+    display: none;
+    position: absolute;
+    z-index: 1;
+    min-width: 180px;
+    background-color: #f9f9f9; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    overflow: auto /*to scroll for small screens*/
+}
+div.dropdown-content a{
+    text-align: left;
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+.dropdown:hover .dropdown-content{display: block;}
+.dropdown-content a:hover {background-color: #f1f1f1;}

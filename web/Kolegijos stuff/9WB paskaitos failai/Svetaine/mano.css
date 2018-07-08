@@ -1,0 +1,50 @@
+body{
+    background-color: #FFF1B3;
+    color: #1C1D1F;
+    font-style: italic;
+}
+table{
+    width: 900px;
+    margin: auto;
+}
+table tr td a{
+    padding: 8px;
+}
+#meniu{
+    width: 100px;
+    vertical-align: top;
+    padding: 20px;
+}
+#meniu a{
+    display: block;
+    border: 3px solid #5B6579;
+    background-color:#B69A84;
+    width: 90px;
+    height: 15px;
+    color: #1C1D1F;
+    text-decoration: none;
+    text-align: left;
+    font: 17px Tahoma;
+}
+#meniu a:hover{
+    border-top-left-radius:10px;
+    border-bottom-right-radius:10px;
+    border:3px solid red;
+    color: red;
+}
+#pavadinimas{
+    font: 40px Tahoma;
+    font-style: bold;
+    color: #1C1D1F;
+}
+#abc{
+    font: 45px Tahoma;
+    font-style: bold;
+    color: rgb(0, 15, 46);
+}
+#rekvizitai{
+    padding: 5px;
+}
+.antraste{
+    color: #1C1D1F;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*img {
+    display: block;
+    margin: 0 auto;
+} paveiksliuko centravimas , butinai reikia padaryti block
+
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+} geriausias overflow budas
+
+*/
+.ex1 {
+    width: 300px;
+    background-color: yellow;
+}
+.ex2 {
+    width: 300px;
+    padding: 25px;
+    box-sizing: border-box; /*box funkcija islaikyti width*/
+    text-shadow: 3px 2px red;
+    background-color: lightblue;
+}
+#outlinex{
+    margin: 30px;
+    border: 1px solid black;
+    outline: 1px solid red; /*antras borderis*/
+    outline-offset: 15px;
+    line-height: 1.8; /*tarpai tarp eiluciu*/ 
+}
+#ntbl{
+    clear:both;
+    float:left;
+    margin-top: 50px;
+    border: collapse;
+    width: 400px;
+    height: 200px;
+}
+#ntbl tr, #ntbl td, #ntbl th{
+    border: 1px solid grey;
+}
+#ntbl tr:nth-child(even){
+    background-color:bisque;
+}
+#ntbl th{
+    background-color: red;
+    padding: 12px;
+}
+    </style>
+</head>
+<body>
+    <div class="ex1">This div is 300px wide.</div>
+    <br>
+    <div class="ex2">The width of this div remains at 300px, in spite of the 50px of total left and right padding, because of the box-sizing: border-box property.</div>
+    <p id="outlinex">This paragraph has an outline 15px outside the border edge.</p>
+    <table id="ntbl">
+        <tr>
+            <th>Gey</th>
+            <th>I'm gey</th>
+        </tr>
+        <tr>
+            <td>Gey</td>
+            <td>I'm gey</td>
+        </tr>
+        <tr>
+            <td>Gey</td>
+            <td>I'm gey</td>
+        </tr>
+        <tr>
+            <td>Gey</td>
+            <td>I'm gey</td>
+        </tr>
+        <tr>
+            <td>Gey</td>
+            <td>I'm gey</td>
+        </tr>
+    </table>
+</body>
+</html>

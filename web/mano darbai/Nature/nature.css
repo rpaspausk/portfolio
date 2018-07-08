@@ -1,0 +1,243 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+*{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+h1{
+    font-size: 1.7em;
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.2;
+}
+h3{
+    color: #2e2e2e; 
+}
+p,
+ul,
+ol{
+    color:#6c6c6c;
+}
+.hstyle{
+    font-size: 3.5em;
+    color: #fff;    
+    text-transform: uppercase;
+    font-weight: normal;
+    line-height: 1.15;
+    margin: 12px 0px;
+    text-shadow: 2px 2px 1px black;
+}
+img{
+    max-width: 100%;
+    margin-bottom: 1.4em;
+    border-radius: 10px;
+}
+.wildlife p{
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+/* Pseudo-classes ------------------ */
+a{
+    text-decoration: none;
+    color: #188718;
+}
+a:hover{
+    color:  #152915;
+}
+
+
+/*==================================
+  Base Layout Stles
+================================*/
+
+/* Navigation ---------------------*/
+.top-nav{
+    display: flex;
+    flex-direction: column;
+}
+.name,
+.ultop-nav{
+    margin: 0;
+}
+.name a{
+    color: #152915;
+}
+.ultop-nav a,
+.name a{
+    display: block;
+    text-align: center;
+    padding: 10px 6px;
+}
+.ultop-nav{
+    margin-top: 0px;
+    list-style: none;
+    padding-left: 0px;
+    color: rgba(12, 135, 12, 0.149)
+}
+/* Introduction ---------------------*/
+.banner{
+    padding: 40px 10px 0px 10px;
+    height: 500px;
+    background: linear-gradient(rgb(226, 255, 226), transparent 1%),
+                linear-gradient(0deg, #fff, transparent),
+                url('rails.jpg') no-repeat center;
+    background-size: cover;
+}
+.arrow {
+    width: 50px;
+    display: none;
+  }
+.title{
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 1.4em;
+    font-weight: 200;
+    letter-spacing: 0.02em; 
+}
+.banner,
+.intro,
+.footer{
+    text-align: center;
+}
+.intro,
+.wildlife{
+    width: 90%;
+    margin: auto;
+}
+.introduction{
+    margin-top: 10px;
+    padding: 0px 14px;
+}
+.callout{
+    border-bottom: 2px solid;
+
+}
+.wildlife{
+    background: #434a52 url('Blue.jpg') no-repeat center; /*spalva tamk jiegu nekrana paveiksliuku*/
+    background-size: cover;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    height: 430px;
+    color: white;
+    text-align: left;
+    padding: 10px 20px 0px 20px;
+    box-shadow: inset 0px 0px 50px 10px rgb(73, 72, 72); 
+    border-top: 15px solid #1887186c;
+    border-radius: 10px;
+    width: 90%;
+}
+
+/* Articles ----------------------*/
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+    margin-top: 15px;
+}
+.col{
+    width: 90%;
+    flex: 1;
+    margin: 30px auto;
+}
+.articles{
+    padding-bottom: 1em;
+}
+/* Footer -----------------------*/
+footer{
+    border-top: 2px solid #6c6c6c49;
+    border-bottom: 10px solid #0f5428c7;
+    padding-bottom: 0.6em;    
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 789px){
+    /* ---------- nav ---------- */
+    .top-nav,
+    .ultop-nav{
+        display:flex;
+    }
+    .top-nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .ultop-nav{
+        margin-left: 0;
+    }
+    .ultop-nav a{
+        padding: 12px;
+    }
+    /* --------- banner --------*/
+    .banner{
+        padding-top: 100px;
+        height: 800px;
+    }
+    .title{ 
+        border-bottom: 2px solid white;
+        letter-spacing: 0.15rem;
+        padding-bottom: 10px;
+    }
+    .banner h1{
+        padding-top: 15px;
+    }
+    .arrow{
+        display: block;
+        margin: auto;
+        padding-top: 60px;
+    }
+    /*------- intro ------------ */
+    .t-border{
+        border-top: 2px solid #6c6c6c5a;
+        margin-top: 45px;
+    }
+    .introduction{
+        margin: 10px 70px;
+        padding-top: 25px
+    }
+    .wildlife{
+        height: 325px;
+    }
+    /*--------articles------------*/
+    .articles{
+        flex-direction: row;
+    }
+    .col{
+        flex: 1 50%;
+        flex-wrap: wrap;
+        padding: 0 16px;
+    }
+
+}
+@media (min-width: 1025px){
+    /*-------nav-------------*/
+    .top-nav{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        margin: auto;
+    }
+
+    /*-------articles--------*/
+
+    .col{
+        flex: 1 33%;
+    }
+
+
+}

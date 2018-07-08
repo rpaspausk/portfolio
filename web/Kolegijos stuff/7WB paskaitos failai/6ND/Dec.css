@@ -1,0 +1,34 @@
+body{
+	text-indent: 200px;
+	background-image: url(BG.png);
+	background-repeat: repeat-y;
+	background-color: #92004e;
+	font-family: Tahoma;
+	font-size: 20px;
+	color: #fffcf7;
+}
+h1{
+	font-family: Tahoma;
+	font-size: 50px;
+	color:#001d3f;
+}
+.aaa{
+	background-color: #ee99c6;
+}
+.sam{
+	font-family: Tahoma;
+	color: #001d3f;
+	text-decoration: overline underline;
+}
+.eve{
+	font-family: Tahoma;
+	color: #ee99c6;
+	text-decoration: overline underline;
+}
+UL{
+	list-style-type: none;
+	font-size: 25px;
+}
+hr{
+	border: 3px solid #cf006f;
+}

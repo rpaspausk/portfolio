@@ -1,0 +1,42 @@
+h2+img{
+    border: 5px solid darkred;
+    border-radius: 20px;
+    float: left;
+    margin: 20px;
+}
+h2{
+    clear: left;
+}
+p{
+    font: 15px Tahoma;
+    color: black;
+    padding-top: 15 px;
+}
+.ypatumai{
+    color: darkred;
+}
+.ypatumai+p{
+    background-color: rgb(211, 211, 211);
+    padding: 5px;
+    margin-left: 380px;
+    margin-right: 20px;
+    border: 2px dotted darkred;
+}
+h2{
+    background-color: rgb(211, 211, 211);
+    font: Tahoma;
+    font-weight: normal;
+}
+h1{
+    color: darkgrey;
+    font: Tahoma;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.kaina{
+    font: 10px Tahoma;
+    text-decoration: overline underline;
+    color: darkred;
+    float: right;
+    word-spacing: 6px;
+}

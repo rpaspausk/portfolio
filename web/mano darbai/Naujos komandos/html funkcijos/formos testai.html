@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5test</title>
+</head>
+<body>
+    <form method="post"> <!-- dar gali buti "get", cia taippat buna action , kur issiusti duomenis -->
+        <fieldset>
+            <legend>yo mom</legend>
+            First name:<br>
+            <input type="text" name="first name" value:"first" readonly> <br> <!-- dar gali buti disabled -->
+            Last name:<br>
+            <input type="text" name="last name" id="second"> <br> <br> <!-- be name nebus submitted -->
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <form>
+        <input type="radio" name="gender" value="male" checked> Male<br> <!-- tas pats name padaro viena glaima varianta -->
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </form>
+
+      <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+      <form>
+          <input list="Genders">
+              <datalist id="Genders">
+                    <option value="Male"></option>
+                    <option value="Female"></option>
+                    <option value="Shemale"></option>
+                    <option value="Hefemale"></option>
+                    <option value="Pan"></option>
+                    <option value="Jew"></option>
+              </datalist>
+              <input type="submit" value="Proceed" autocomplete="on"> <!-- bent cia value tampa mygtuko pavadninimu, autocompleate dabar neveikia, bet siaip automatiskai uzpildo laukus -->
+      </form>
+
+      <form>
+        Select your favorite color:
+        <input type="color" name="favcolor">
+      </form>
+
+      <form action="" id="form1">
+        First name: <input type="text" name="fname"><br>
+        <input type="submit" value="Submit">
+        </form>
+        
+        <p>The "Last name" field below is outside the form element, but still part of the form.</p>
+        Last name: <input type="text" name="lname" form="form1">
+
+        <form action="/action_page.php" method="get">
+            First name: <input type="text" name="fname" placeholder="First name"><br> <!-- jau paraso permatomom raidem ka nori -->
+            Last name: <input type="text" name="lname" placeholder="Last name" required><br> <!-- required, labai svarbi ateiciai zyme -->
+            <input type="submit" value="Submit">
+            <input type="submit" formmethod="post" value="Submit using POST">
+          </form>
+    
+
+</body>
+</html>

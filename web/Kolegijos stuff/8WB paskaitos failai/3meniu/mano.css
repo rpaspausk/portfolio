@@ -1,0 +1,21 @@
+.mygtukai{
+	background-color:gold;
+	padding:20px;		
+	height: 80px;
+}
+.mygtukai a{
+	font: 20px Tahoma;
+	color: white;
+	text-decoration: none;
+	padding: 10px;
+	background-color: black;
+	border: 10px inset tomato;
+	border-top-right-radius: 20px;
+}
+.mygtukai a:hover{
+	color:tomato;
+	background-color: gray;
+	border: 5px inset black;
+	border-radius: 0px;
+	letter-spacing: 5px;
+}

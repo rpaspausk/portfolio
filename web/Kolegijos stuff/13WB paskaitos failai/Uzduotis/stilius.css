@@ -1,0 +1,33 @@
+#pav{
+    text-align: center;
+    color: rgb(189, 189, 189);
+    letter-spacing: 4px;
+}
+h2{
+    background-color: rgb(189, 189, 189);
+    color: black;
+    font-weight: normal;
+    margin: 20px 10px 0px 0px; 
+}
+.ypatumai{
+    color: red;
+}
+img{
+    float:left;
+    border-radius:15px;
+    width: 220px;
+    height: 170px;
+    margin: 10px;
+    border: 2px solid red;
+}
+.kaina{
+    float: right;
+    text-decoration: overline underline;
+    color: red;
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+.kaina::before{
+    background-color: rgb(189, 189, 189);
+    
+}

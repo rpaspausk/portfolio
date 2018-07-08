@@ -1,0 +1,22 @@
+#pirmas a{
+	display: block;
+}
+.mygtukai a {
+	width: 120px; 
+	padding: 5px; /*atstumas nuo kra�t�, mygtuko viduje*/
+	margin: 1px 0px 1px 0px;/*atstumas nuo kra�t�, mygtuko i�or�je*/
+	text-decoration: none; /*sriftas nepabrauktas*/
+	border: 1px solid #999; /*kairiojo r�melio spalva*/
+	font: 11px verdana; /*� gali buti ir bald viduje riftas*/
+	font-weight: bold; /*srifto storis*/
+	color:#999; /*srifto spalva*/
+	}
+.mygtukai a:hover { 
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	background-color: #FFF; /*fono spalva*/
+	padding: 5px; /*atstumas nuo kra�t�, mygtuko viduje*/
+	margin: 1px 0px 1px 0px; /*atstumas nuo kra�t�, mygtuko i�or�je*/
+	color:#993300; /*�rifto spalva*/
+	border: 1px solid #993300; /*kairiojo r�melio spalva*/
+	} 

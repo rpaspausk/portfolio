@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 800px;
+            margin: auto;
+        }
+        header{
+            background-image: url(images/header.png);
+            height: 221px;
+            margin-top: 100px;
+            filter: alpha(opacity=50); /*tai taipat galima padaryti su paveiksliukais ir hover*/
+        }
+        #content{
+            background-image: url(images/bg.png);
+            min-height: 300px;
+            text-align: center;
+        }
+        #content img{
+            padding: 5px;
+        }
+        footer{
+            background-image: url(images/footer.png);
+            min-height: 98px;
+        }
+        .visible{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div class="visible"><img src="images/logotype.png" alt="logotype"></div>
+            <div class="visible"><img src="images/linija.png" alt="linija"></div>
+        </header>
+        <div id="content">
+            <img src="images/apie.png" alt="1"><br>
+            <img src="images/paslaugos.png" alt="2"><br>
+            <img src="images/darbai.png" alt="3"><br>
+            <img src="images/kontaktai.png" alt="4"><br>
+        </div>
+        <footer>
+            <img src="images/linija.png" alt="linija">
+        </footer>
+    </div>
+</body>
+</html>

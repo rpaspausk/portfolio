@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paveiksleliai</title>
+    <style>
+        #header #vienas,#header #du,#header #trys,#header #keturi{
+    position:absolute;
+    top: 70px;
+    border: 15px solid white;
+    width: 250px;
+        }
+        #header #vienas{
+    left: 50px;
+    transform: rotate(-20deg);
+        }
+        #header #du{
+    left: 200px;
+    transform: rotate(20deg);
+        }
+        #header #trys{
+    left: 630px;
+    transform: rotate(-20deg);
+        }   
+        #header #keturi{
+    left: 780px;
+    transform: rotate(20deg);
+        }
+        #album{
+    float:left;
+        }   
+        #album img{
+    height: 170px;
+    width: 220px;
+    margin: 20px 0 0 40px;
+        }
+        #album #vienas{
+    border-radius: 5px;
+        }
+        #album #du{
+    border-radius: 50%;
+        }
+        #album #trys{
+    outline: 3px solid rgb(231, 231, 231);
+    outline-offset: 5px;
+        }
+        #album #keturi{
+    box-shadow: 4px 4px 4px grey;
+        }
+        #nature{
+    position: absolute;
+    left: 860px;
+    top: 440px;
+    color: white;
+    font: 35px Tahoma;
+        }
+        .pletinys{
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    transition: height 1s;
+    border: 2px solid lightgreen;
+    background-color: lightgreen;
+        }
+        .pletinys:hover{
+    height:400px;
+        }
+        #fotoblock{
+    clear:both;       
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="header.jpg" alt="headeris">
+        <img id="vienas" src="foto/1.jpg" alt="vienas">
+        <img id="du" src="foto/2.jpg" alt="du">
+        <img id="trys" src="foto/3.jpg" alt="trys">
+        <img id="keturi" src="foto/4.jpg" alt="keturi">
+    </div>
+    <div id="album">
+        <img id="vienas" src="foto/1.jpg" alt="vienas">
+        <img id="du" src="foto/2.jpg" alt="du">
+        <img id="trys" src="foto/3.jpg" alt="trys">
+        <img id="keturi" src="foto/4.jpg" alt="keturi">
+        <p id="nature">Nature</p>
+    </div>
+    <div id="fotoblock">
+    <figure class="pletinys">
+        <img src="img_small/achimene-200x200.jpg" alt="achimene">
+        <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate nostrum ipsam, dolor iusto, illo delectus nobis, voluptates accusantium quas laboriosam provident sunt voluptatem porro soluta. Et reprehenderit magni odit.</figcaption>
+    </figure>
+    <figure class="pletinys">
+            <img src="img_small/amarilis-200x200.jpg" alt="achimene">
+            <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate nostrum ipsam, dolor iusto, illo delectus nobis, voluptates accusantium quas laboriosam provident sunt voluptatem porro soluta. Et reprehenderit magni odit.</figcaption>
+    </figure>
+    <figure class="pletinys">
+                <img src="img_small/anturis-200x200.jpg" alt="achimene">
+                <figcaption>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem voluptate nostrum ipsam, dolor iusto, illo delectus nobis, voluptates accusantium quas laboriosam provident sunt voluptatem porro soluta. Et reprehenderit magni odit.</figcaption>
+    </figure> 
+     </div>
+</body>
+</html>
