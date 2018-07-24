@@ -1,9 +1,48 @@
-.text{
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.line{
+    margin-top: 1.5em;
+    border-top: 2px solid #6c6c6c49;
+}
+.articles{
     width: 80%;
-    text-align: center;
+}
+.text{
+    text-align: justify;
     margin: auto;
 }
 
-.image{
-    width: 80%;
+.mapas{
+    width: 400px;
+    height: 400px;
+  
+}
+
+@media (min-width: 780px){
+.top-nav{
+    border-bottom: 2px solid #6c6c6c49;
+}
+.line{
+    border: none;
+    margin-top: 0em;
+}
+.mapas{
+    width: 600px;
+}
+}
+
+@media (min-width: 1025px){
+.top-nav{
+    border-bottom: none;
+}   
+.line{
+    border-top: 2px solid #6c6c6c49;
+}
+.mapas{
+    width: 800px;
+}
 }
