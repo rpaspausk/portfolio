@@ -1,0 +1,46 @@
+/* ================================= 
+  Base layout Styles
+==================================== */
+
+
+.line{
+    border-top: 2px solid #6c6c6c49;
+    margin-top: 1.5em;
+}
+.punchline{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px){
+.line{
+    margin-top: 0;
+}
+
+img{
+    width:  400px;
+    height: 400px;
+}
+.articles{
+    width: 80%;
+}
+.articles, .third{
+    display: flex;
+}
+.third{
+    flex-direction: row;
+    margin-top: 1em;
+}
+.split{
+    flex: 1 50%;
+    padding: 0 1em;
+}
+}
+@media (min-width: 1025px){
+
+}
