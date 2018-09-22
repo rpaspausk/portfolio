@@ -12,7 +12,8 @@ h3 {
 	margin-bottom: 0em;
 }
 p{
-    font: 1em Sans-serif;
+    font: .95em Sans-serif;
+    line-height: 1.2em;
 }
 p, h3{
     color: white;
@@ -21,6 +22,7 @@ p, h3{
     text-align: center;
 }
 .image{
+    margin: 40px;
     position: relative;
     top: 0;
     bottom: 0;
@@ -34,12 +36,24 @@ p, h3{
 .photo{
     transition:transform .5s ease-in-out ;
 }
+
+.button{
+    text-decoration: none;
+    background: rgb(68, 120, 218);
+    color: #fff;
+    display: block;
+    width: 70%;
+    text-transform: uppercase;
+    border-radius: .5em;
+    padding: 10px 0;
+    border: 1px solid white;
+    font-weight: 800;
+}
 .overlay{
     position: absolute;
     top:0;
     left:0;
     height: 250px;
-    border: 2px solid rgb(29, 87, 3);
 
     display:flex;
    /* For centering text inside .photo-overlay */
@@ -50,7 +64,7 @@ p, h3{
     padding-right: 20px;
 
 
-    background: rgb(0, 59, 136);
+    background: #345d88;
     transform: translateX(-100%);
     transition:transform .5s ease-in-out;
 }

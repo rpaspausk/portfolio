@@ -1,0 +1,38 @@
+<!DOCTYPE htm>
+<html lang="lt">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>JavaScript - kintamieji, isvedimas</title>
+</head>
+
+<body>
+<h1>Kintamieji, išvedimas</h1>
+<script>
+//lokalus kintamieji inicijuojami pries kintamojo varda rasant var
+//kint. vardai buna is raidziu skaitmenu ir zenklu ir negali prasideti skaiciumi
+var sk1 = 15;
+var sk2, sk3; // jie neturi pradiniu reiksmiu
+sk2=105.5;// real skaiciams skyriklis .
+sk3=sk1*5-sk2;// 15*5-105.5=-30.5;
+var kint = 45>8;// (taip -> true -> 1;)
+
+//pranesimo isvedimas
+//kolkas naudosime document.write()
+// document - objektas, write - jo metodas
+document.write('turiu labai skaniu saldainiu');
+document.write(sk1);
+document.write('<br> sk2=' + sk2);
+//uzsakymas
+document.write('<hr>');
+var s1=7, s2=9;
+document.write('<br>' + s1 + ' + ' + s2 + ' = ' + (s1+s2));
+document.write('<br>' + s1 + ' - ' + s2 + ' = ' +(s1-s2));
+document.write('<br>' + s1 + ' * ' + s2 + ' = ' + (s1*s2));
+document.write('<br>' + s1 + ' / ' + s2 + ' = ' + + (s1/s2));
+
+
+
+</script>
+
+</body>
+</html>
